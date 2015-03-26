@@ -2,7 +2,19 @@
 import re
 
 def wordCounter(stringa):
-	return len(re.compile('[a-zA-Z]+').findall(stringa))
+	diz = {}
+	listaParole = re.compile('[a-zA-Z]+').findall(stringa)
+	#return len(re.compile('[a-zA-Z]+').findall(stringa))
+	for parola in listaParole:
+		diz[parola] = diz.get(parola, 0) + 1
+	return diz	
 
-#print(len(re.compile('[a-zA-Z]+').findall("Ciao a tutti, come va? Tutto bene")))
-print(wordCounter("ciao mondo.affsg. afag faf fafa "))
+def wordCounterLezione(stringa):
+	parole = stringa.split()
+	diz = {}
+	for words in parole:
+		diz[words] = diz.get(words, 0) + 1
+	return diz
+
+asd = wordCounter("Ciao, a tutti. asd lol asd XD")
+print (asd)
