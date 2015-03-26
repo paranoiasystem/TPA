@@ -16,5 +16,5 @@ def wordCounterLezione(stringa):
 		diz[words] = diz.get(words, 0) + 1
 	return diz
 
-asd = wordCounter("Ciao, a tutti. asd lol asd XD")
+asd = wordCounter("Ciao, a tutti. asd ops! asd test test1 test test a abcd a, b, c, d,")
 print (asd)
