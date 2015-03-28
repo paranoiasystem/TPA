@@ -10,4 +10,4 @@ def primes(n):
         p = {x for x in range(2, n) if x not in no_p}
     return p
 
-primes(100)
+primes(1000)

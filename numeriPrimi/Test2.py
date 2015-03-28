@@ -25,4 +25,4 @@ try:
 	async_result1 = pool.apply_async(primeNumber, (500000, 500000, ))
 	return_val1 = async_result1.get()
 except:
-	print ("Errore Thread")
+	print ("Errore Lancio Thread")
