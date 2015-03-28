@@ -7,7 +7,7 @@ def wordCounter(stringa):
 	#return len(re.compile('[a-zA-Z]+').findall(stringa))
 	for parola in listaParole:
 		diz[parola] = diz.get(parola, 0) + 1
-	return diz	
+	return diz
 
 def wordCounterLezione(stringa):
 	parole = stringa.split()

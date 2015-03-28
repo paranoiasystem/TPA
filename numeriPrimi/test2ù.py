@@ -8,6 +8,6 @@ def prime(n):
 			primes.get(m)
 			yield m
 
-a = prime(1000000)
-a=list(a)
-print(a)
+a = list(prime(1000000))
+#a=list(a)
+#print(a)

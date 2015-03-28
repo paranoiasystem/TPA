@@ -11,4 +11,3 @@ def primes(n):
     return p
 
 primes(100)
-#print(sorted(primes(100)))
